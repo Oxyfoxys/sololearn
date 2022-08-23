@@ -4,10 +4,12 @@
 - изменение 1
 - изменение 2
 
--- Посмотреть таблицы в схеме
+```roomsql
+-- Show tables
 SELECT name, sql FROM sqlite_master
 WHERE type='table'
 ORDER BY name;
+```
 
 -- смотреть информацию о свойствах столбцов
 PRAGMA table_info(fio_dr);
